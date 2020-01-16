@@ -1,21 +1,27 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import axios from "axios";
+import "./App.css";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+export default function App(props) {
+  const [data, setData] = useState(null);
+
+  const testData = () => {
+    axios
+      .get("/api/test") // You can simply make your requests to "/api/whatever you want"
+      .then(response => {
+        // handle success
+        console.log(response.data); // The entire response from the Rails API
+
+        console.log(response.data.message); // Just the message
+        setData(response.data.message);
+      });
+  };
+
+  return (
+    <div>
+      <h1>Click button for test from express server</h1>
+      <p>{data}</p>
+      <button onClick={testData}>CLICK ME</button>
+    </div>
+  );
 }
-
-export default App;
