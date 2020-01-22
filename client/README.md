@@ -17,5 +17,5 @@ Background track - it only hurts when im breathing - shania twain
 - A user can chat with other users at their garden
 - Minigames!!! 8 ball pool!!!! Catch the beans!!!
 - Animals try and eat your plants, must protecc 👁👃👁
-                                                  👅
+-                                                 👅
 - After growing your first 10 or 20 veggies you become one with nature and are awarded an animal familiar
