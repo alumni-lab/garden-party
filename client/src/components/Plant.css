@@ -1,0 +1,12 @@
+.plant {
+  border: 2px solid rgb(58, 29, 14);
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.emoji {
+  z-index: 10;
+}
