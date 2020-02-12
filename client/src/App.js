@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./App.css";
+import Garden from "./components/Garden"
 
 export default function App(props) {
   const [data, setData] = useState(null);
@@ -22,6 +23,7 @@ export default function App(props) {
       <h1>Click button for test from express server</h1>
       <p>{data}</p>
       <button onClick={testData}>CLICK ME</button>
+      <Garden />
     </div>
   );
 }
